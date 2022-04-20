@@ -15,9 +15,7 @@ for img in path: #running a loop to iterate through every image in the file
     gray_pic = cv2.cvtColor(pic, cv2.COLOR_BGR2GRAY) #converting the image into grayscale
     r, threshold = cv2.threshold(gray_pic, 110, 255, cv2.THRESH_OTSU) #converting the image into grayscale using the histogram method
     
-    # if image has majority 255 pixels, invert the image
-    #for x in threshold:
-    #    if 
+    # need add de-noise element from exploration python file.
     
     cv2.imwrite(outpath + str(image_no) + '.jpg', threshold) # write to the test_pImg folder 
     
